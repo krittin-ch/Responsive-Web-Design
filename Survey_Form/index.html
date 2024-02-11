@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Krittin Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <div class="container">
+        <form action="" id="survey-form">
+            <div class="form-group">
+                <label for="" id="name-label">Name</label>
+                <input type="text" name="" id="name" placeholder="Enter Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="" id="email-label">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="" id="number-label">Age (Optional)</label>
+                <input type="number" name="" id="number" placeholder="Age" min="20" max="100">
+            </div>
+            <div class="form-group">
+                <label>What do you expect from us?</label>
+                <div>
+                    <input type="radio" name="expectation" id="programming" value="programming">
+                    <label for="programming">Programming</label>
+                </div>
+                <div>
+                    <input type="radio" name="expectation" id="logic" value="logic">
+                    <label for="logic">Logical Reasoning Skills</label>
+                </div>
+                <div>
+                    <input type="radio" name="expectation" id="others" value="others">
+                    <label for="others">Others</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="">Which option best describes your current role?</label>
+                <select id="dropdown" name="role" class="" required="">
+                    <option disabled selected value="">Select current role</option>
+                    <option name="student" value="student">Student</option>
+                    <option name="job" value="job">Full Time Job</option>
+                    <option name="learner" value="learner">Full Time Learner</option>
+                    <option name="preferNo" value="preferNo">Prefer not to say</option>
+                    <option name="others" value="others">Others</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>How do you find me?</label>
+                <div>
+                    <input type="checkbox" name="find" value="fb">
+                    <label for="fb">Facebook</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="find" value="ig">
+                    <label for="ig">Instagram</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="find" value="others">
+                    <label for="others">Others</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="">Any suggestions?</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="form-group">
+                <button id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
