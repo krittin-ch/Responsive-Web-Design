@@ -120,8 +120,8 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
     border-radius: 5px;
+    margin-top: 60px;
 }
 
 .features {
