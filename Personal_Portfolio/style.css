@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@media only screen and (min-width:100px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        color: #fff;
+        scroll-behavior: smooth;
+    }
+}
+
+
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(85, 146, 143);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+
+#navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(85, 146, 143);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+#navbar ul {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+#navbar ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+}
+
+#navbar ul li a::before {
+    content: "";
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: red;
+    transition: all 0.5s ease-in-out;
+}
+
+#navbar ul li a:hover::before {
+    width: 100%;
+}
+
+section {
+    padding-top: 60px;
+}
+
+#welcome-section {
+    width: 100%;
+    height: 100vh;
+    background: rgb(93,92,92);
+    background: linear-gradient(138deg, rgba(93,92,92,1) 0%, rgba(34,33,33,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    text-align: center;
+}
+
+.name h1 {
+    font-size: 50px;
+}
+
+.name p {
+    font-size: 30px;
+    font-weight: 50;
+    color: rgb(85, 146, 143);
+}
+
+#projects {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(63, 66, 99);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects h1 {
+    margin-top: 70px;
+    font-size: 40px;
+    font-weight: 200;
+}
+
+.project-tile {
+    width: 110%;
+    height: 350px;
+    background-color: #dde;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(0px);
+    transition: all 1s;
+}
+
+.project-tile:hover {
+    transform: translateY(-10px);
+    transition: all 1s;
+}
+
+.project-tile img {
+    width: 600px;
+    height: auto;
+}
+
+.project-tile a {
+    text-decoration: none;
+}
+
+.project-tile p {
+    margin-top: 20px;
+    background-color: #333;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center     ;
+    text-align: center;
+}
+
+#contact {
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.end {
+    width: 800px;
+    height: 120px;
+}
+
+.end h1 {
+    font-size: 50px;
+}
+
+.end p {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.contact-links {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+    height: 50px;
+}
+
+.contact-links a {
+    text-decoration: none;
+    font-size: 20px;
+    transform: translateY(0px);
+    transition: all 0.8s;
+}
+
+.contact-links a:hover {
+    transform: translateY(10px);
+    transition: all 0.8s;
+}
+
+#contact footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    padding: 0px 300px 0 300px;
+}
+
+#contact footer::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(85, 146, 143);
+    width: 100%;
+    height: 5px;
+}
+
+#contact footer p {
+    font-size: 20px;
+}

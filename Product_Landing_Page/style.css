@@ -114,6 +114,11 @@ header {
     transition: all 1s;
 }
 
+section {
+    position: relative;
+    padding-top: 200px;
+}
+
 #feature {
     width: 100%;
     display: flex;
@@ -121,7 +126,6 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    margin-top: 60px;
 }
 
 .features {
@@ -235,6 +239,7 @@ footer {
     text-align: right;
     height: 80px;
     padding: 10px;
+    margin-top: 150px;
 }
 
 .more-info {
